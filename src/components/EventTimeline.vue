@@ -7,12 +7,12 @@
       :icon="item.icon"
       fill-dot
     >
-      <v-card :color="item.color" dark>
-        <v-card-title class="title pt-1 pb-1">
-          <h3 class="title">Source File: "{{ item.title }}"</h3>
+      <v-card height="auto" :color="item.color" dark>
+        <v-card-title class="primary-title pt-0 pb-0">
+          <h3 class="title">{{ item.title }}</h3>
         </v-card-title>
         <v-card-text class="white text--primary">
-          <p class="pt-1 body-1 mb-0">Stored As: "{{ item.text }}"</p>
+          <p class="pt-0 pb-0 body-0 mb-0">{{ item.text }}</p>
         </v-card-text>
       </v-card>
     </v-timeline-item>

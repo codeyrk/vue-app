@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <img src="@/assets/g42-logo.png" alt="G42" />
+      <v-img max-width="64px" max-height="64px" src="@/assets/wireshark-icon.png" alt="G42" />
       <v-divider class="mr-8" vertical></v-divider>
       <v-toolbar-title>PCAP Decoder</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -11,8 +11,7 @@
         text
         rounded
         :to="link.url"
-        >{{ link.label }}</v-btn
-      >
+      >{{ link.label }}</v-btn>
       <v-btn @click="toggleTheme" text rounded>Toggle Theme</v-btn>
     </v-app-bar>
     <v-content>
@@ -28,8 +27,7 @@
           rounded
           class="my-2"
           :to="link.url"
-          >{{ link.label }}</v-btn
-        >
+        >{{ link.label }}</v-btn>
         <v-flex primary lighten-2 py-4 text-center white--text xs12>
           {{ new Date().getFullYear() }} —
           <strong>Team NCAT</strong>
